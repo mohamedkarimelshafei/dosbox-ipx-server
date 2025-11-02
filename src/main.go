@@ -19,7 +19,7 @@ var upgrader = websocket.Upgrader{
 }
 
 var ipxHandler = &IpxHandler{
-	serverAddress: "127.0.0.1:" + port,
+	serverAddress: "0.0.0.0:" + port,
 }
 
 func getRoom(r *http.Request) string {
